@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #181818;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav */
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+.nav-logo img {
+  max-width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-links a {
+  color: #fff;
+  position: relative;
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+}
+
+.nav-links a::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #1e40af;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover::before {
+  width: 60%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #1d4ed8;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+/* header */
+header {
+  padding-top: 5rem;
+  position: relative;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+header .content h4 {
+  padding-bottom: 1rem;
+}
+
+header .content h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 600;
+}
+
+header .content h1 span {
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+}
+
+header .content p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Features */
+
+section {
+  color: #fff;
+}
+
+section h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+section .features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+section .card {
+  position: relative;
+  padding: 1rem;
+  background: #27272a;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+section .card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.sochials .icon a {
+  color: #fff;
+}
+
+section .card .icons {
+  display: inline-block;
+  font-size: 1.75rem;
+  background: #1e40af;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+section .card p {
+  color: #ccc;
+  margin-bottom: 2.3rem;
+}
+
+section .card button {
+  color: #fff;
+  background: transparent;
+}
+
+section .card button {
+  color: #fff;
+  background: transparent;
+  position: absolute;
+  bottom: 15px;
+}
+
+section .card button a {
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+section .card button a:hover {
+  color: #1d4ed8;
+}
+
+section .card:hover {
+  border-color: #ccc;
+}
+
+/* Pricing */
+
+section .pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(357.33px, 1fr));
+  gap: 2rem;
+}
+
+section p.sub-p {
+  color: #ccc;
+  margin-top: 0;
+  max-width: fit-content;
+}
+
+section .pricing .card-plan {
+  padding: 48px 2rem;
+  background: #27272a;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+section div h1 {
+  margin-bottom: 1rem;
+}
+
+section div.heading {
+  margin: auto;
+  margin-bottom: 4rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+section .pricing .card-plan .price {
+  font-size: 2.1rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed #fff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+section .pricing .plan span {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+section .pricing .card-plan button {
+  position: absolute;
+  width: 82.9819026587%;
+  bottom: 30px;
+  background: transparent;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+section .pricing .card-plan button:hover {
+  border-color: #1e40af;
+  background-color: #1e40af;
+}
+
+section .pricing .card-plan:hover {
+  border-color: #fff;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(4, 1fr);
+  color: white;
+  gap: 2rem;
+}
+
+footer .image img {
+  max-width: 100px;
+  padding-bottom: 2rem;
+}
+
+footer p {
+  max-width: 400px;
+  padding-bottom: 2rem;
+  color: #ccc;
+}
+
+footer .sochials {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .sochials .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+footer .sochials .icon:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+footer h4 {
+  padding-bottom: 2rem;
+  font-size: 19px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+footer .column > a {
+  color: #ccc;
+  white-space: nowrap;
+  display: block;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer .column > div > a:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+footer .column > a:hover {
+  color: #1d4ed8;
+}
+
+/* Copyright */
+.copyright {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (width < 900px) {
+  footer {
+    grid-template-columns: 1fr 150px;
+  }
+  .column {
+    margin-bottom: 2rem;
+  }
+  nav .nav-links {
+    display: none;
+  }
+}
+
+@media (width < 600px) {
+  footer {
+    grid-template-columns: 1fr 100px;
+  }
+}
